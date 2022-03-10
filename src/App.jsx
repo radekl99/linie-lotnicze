@@ -1,14 +1,16 @@
-import "./App.scss";
+import { useState } from "react";
+import classes from "./App.module.scss";
+import FlightsForm from "./components/FlightsForm";
+import FlightsList from "./components/FlightsList";
 
 function App() {
+  const [flight, setFlight] = useState(null);
+
   return (
-    <div className="App">
-      <section>
-        <h1>Wyszukiwarka lotów</h1>
-        {/* FORM */}
-        {/* LISTA LOTÓW */}
-      </section>
-    </div>
+    <section className={classes.app}>
+      <FlightsForm setFlight={setFlight} />
+      <FlightsList flight={flight} />
+    </section>
   );
 }
 

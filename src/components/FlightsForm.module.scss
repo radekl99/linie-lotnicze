@@ -1,0 +1,53 @@
+@import "../variables";
+
+.flights-form {
+  h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  form {
+    width: 40rem;
+    max-width: 90vw;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 $primary-darker;
+  }
+
+  label {
+    margin-left: 0.5rem;
+  }
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-around;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.submit-btn {
+  width: fit-content;
+  place-self: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: $primary-darker;
+  color: white;
+  font-family: $font;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 150ms;
+}
+
+.submit-btn:hover {
+  box-shadow: 0 0.2rem 0.8rem $primary-darker;
+}

@@ -1,0 +1,37 @@
+@import "../variables";
+
+.flight-item {
+  width: 40rem;
+  max-width: 90vw;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5rem;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  h2 {
+    font-weight: 400;
+    color: $gray;
+  }
+
+  hr {
+    flex: 1;
+    height: 0.1rem;
+    margin: 0 1.5rem;
+    border: none;
+    background-color: $gray;
+    opacity: 0.1;
+  }
+}
+
+.icon {
+  font-size: 1.75rem;
+  color: $primary-darker;
+}
